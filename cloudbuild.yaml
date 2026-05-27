@@ -10,12 +10,8 @@ steps:
     args: ['run', 'build']
 
   # 3. (Optional) Deploy step could go here
-  # Example: Deploy to Firebase or Cloud Storage
-
-artifacts:
-  objects:
-    location: 'gs://your-bucket-name/build-output/' # Replace with your bucket
-    paths: ['dist/*']
+  # To store build artifacts, create a Google Cloud Storage bucket 
+  # and add an 'artifacts' section here.
 
 options:
   logging: CLOUD_LOGGING_ONLY
